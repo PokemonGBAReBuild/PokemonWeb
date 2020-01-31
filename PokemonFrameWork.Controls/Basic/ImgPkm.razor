@@ -1,0 +1,10 @@
+﻿@inherits ImgPkmBase
+
+@if (Pokemon != null) {
+<img src="@GetImg()" onclick="@Click" />
+}
+else
+{
+    <img src="https://bostonteen.files.wordpress.com/2012/03/missingno-2.png" onclick="@Click"/>@*Temporal*@
+}
+

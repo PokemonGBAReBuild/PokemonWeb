@@ -1,0 +1,4 @@
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\staticwebassets\PokemonFrameWork.Controls.StaticWebAssets.Manifest.cache
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\staticwebassets\PokemonFrameWork.Controls.StaticWebAssets.xml
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\PokemonFrameWork.Controls.RazorComponent.input.cache
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\PokemonFrameWork.Controls.csprojAssemblyReference.cache
