@@ -13,22 +13,24 @@ namespace PokemonFrameWork.Controls.Basic
         //[Parameter] public float Height { get; set; }
         //[Parameter] public float Width { get; set; }
 
-       protected Bitmap GetImg()
+       public Bitmap ImgActual
         {
-            PokemonGBAFrameWork.BloqueImagen img;
-
-            if (IsFrontalPic)
+            get
             {
-                img = Pokemon.Sprites.SpritesFrontales.Sprites[FramePic];
-            }
-            else
-            {
-                img = Pokemon.Sprites.SpritesTraseros.Sprites[FramePic];
-            }
+                PokemonGBAFrameWork.BloqueImagen img;
 
-            return img;
+                if (IsFrontalPic)
+                {
+                    img = Pokemon.Sprites.SpritesFrontales.Sprites[FramePic];
+                }
+                else
+                {
+                    img = Pokemon.Sprites.SpritesTraseros.Sprites[FramePic];
+                }
+
+                return img;
+            }
         }
-
         protected override void OnParameterSet()
         {
             if (Pokemon != null)
