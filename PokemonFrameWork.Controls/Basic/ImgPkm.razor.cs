@@ -9,26 +9,34 @@ namespace PokemonFrameWork.Controls.Basic
         [Parameter] public PokemonGBAFrameWork.PokemonCompleto Pokemon { get; set; }
         [Parameter] public bool IsFrontalPic { get; set; } = true;
         [Parameter] public int FramePic { get; set; } = 0;//el primero esta por defecto
-        [Parameter] public EventCallBack Click { get; set; }
-        //[Parameter] public float Height { get; set; }
-        //[Parameter] public float Width { get; set; }
+        [Parameter] public EventCallBack OnClick { get; set; }
 
-       public Bitmap ImgActual
+        [Parameter] public EventCallBack OnDobleClick { get; set; }
+        [Parameter] public EventCallBack OnContextMenu { get; set; }
+        [Parameter] public EventCallBack OnMouseOver { get; set; }
+        public string ImgActual
         {
             get
             {
+                string url;
                 PokemonGBAFrameWork.BloqueImagen img;
-
-                if (IsFrontalPic)
-                {
-                    img = Pokemon.Sprites.SpritesFrontales.Sprites[FramePic];
-                }
+                if (Pokemon == null)
+                    url = "missigno.png";
                 else
                 {
-                    img = Pokemon.Sprites.SpritesTraseros.Sprites[FramePic];
+                    if (IsFrontalPic)
+                    {
+                        img = Pokemon.Sprites.SpritesFrontales.Sprites[FramePic];
+                    }
+                    else
+                    {
+                        img = Pokemon.Sprites.SpritesTraseros.Sprites[FramePic];
+                    }
+                    //creo una URL para el Bitmap
+
                 }
 
-                return img;
+                return url;
             }
         }
         protected override void OnParameterSet()

@@ -1,10 +1,5 @@
 ﻿@inherits ImgPkmBase
 
-@if (Pokemon != null) {
-<img src="@ImgActual" onclick="@Click" />
-}
-else
-{
-    <img src="missingno.png" onclick="@Click"/>
-}
+
+<img src="@ImgActual" onclick="@Click" ondblclick="@OnDobleClick" onmouseover="@OnMouseOver"  oncontextmenu="@OnContextMenu"/>
 
