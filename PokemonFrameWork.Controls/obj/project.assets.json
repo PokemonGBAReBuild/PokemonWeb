@@ -2,6 +2,27 @@
   "version": 3,
   "targets": {
     ".NETStandard,Version=v2.0": {
+      "Gabriel.Cat.Blazor/1.0.0-preview1": {
+        "type": "package",
+        "dependencies": {
+          "Gabriel.Cat.S.Utilitats": "1.0.4.4-preview1.0.6",
+          "Microsoft.AspNetCore.Components": "3.1.1",
+          "Microsoft.AspNetCore.Components.Web": "3.1.1",
+          "System.Drawing.Common": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Gabriel.Cat.Blazor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Gabriel.Cat.Blazor.dll": {}
+        },
+        "build": {
+          "buildTransitive/Gabriel.Cat.Blazor.props": {}
+        },
+        "buildMultiTargeting": {
+          "buildMultiTargeting/Gabriel.Cat.Blazor.props": {}
+        }
+      },
       "Gabriel.Cat.S.Binaris/1.0.5-preview1.0.9": {
         "type": "package",
         "dependencies": {
@@ -345,6 +366,24 @@
     }
   },
   "libraries": {
+    "Gabriel.Cat.Blazor/1.0.0-preview1": {
+      "sha512": "fKiKJZaKEaOQ2Z1u0pGPtkL03V3ZI1EZE0hU66XFjMdpcZwctg38LTAyvoLY3AATDAYWSLI6XrKWmNd8T8dXMA==",
+      "type": "package",
+      "path": "gabriel.cat.blazor/1.0.0-preview1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "build/Gabriel.Cat.Blazor.props",
+        "build/Microsoft.AspNetCore.StaticWebAssets.props",
+        "buildMultiTargeting/Gabriel.Cat.Blazor.props",
+        "buildTransitive/Gabriel.Cat.Blazor.props",
+        "gabriel.cat.blazor.1.0.0-preview1.nupkg.sha512",
+        "gabriel.cat.blazor.nuspec",
+        "lib/netstandard2.0/Gabriel.Cat.Blazor.dll",
+        "staticwebassets/JSUtils.js"
+      ]
+    },
     "Gabriel.Cat.S.Binaris/1.0.5-preview1.0.9": {
       "sha512": "Wdck4sXTHefdTBKdpPhBwo1j/gVjKu+Ao9RlC4IT88X8Izv3k+g3SaQ/OVkboMvbgFTQ6EbbTW/QVc5HMapZWA==",
       "type": "package",
@@ -1152,6 +1191,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
+      "Gabriel.Cat.Blazor >= 1.0.0-preview1",
       "Microsoft.AspNetCore.Components >= 3.1.1",
       "Microsoft.AspNetCore.Components.Web >= 3.1.1",
       "NETStandard.Library >= 2.0.3",
@@ -1164,7 +1204,7 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.0.0-preview1",
     "restore": {
       "projectUniqueName": "C:\\Users\\tetra\\source\\repos\\PokemonFrameWork.Controls\\PokemonFrameWork.Controls\\PokemonFrameWork.Controls.csproj",
       "projectName": "PokemonFrameWork.Controls",
@@ -1201,6 +1241,10 @@
     "frameworks": {
       "netstandard2.0": {
         "dependencies": {
+          "Gabriel.Cat.Blazor": {
+            "target": "Package",
+            "version": "[1.0.0-preview1, )"
+          },
           "Microsoft.AspNetCore.Components": {
             "target": "Package",
             "version": "[3.1.1, )"
@@ -1234,7 +1278,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

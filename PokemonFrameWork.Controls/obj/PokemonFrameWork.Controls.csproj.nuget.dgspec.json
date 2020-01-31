@@ -5,7 +5,7 @@
   },
   "projects": {
     "C:\\Users\\tetra\\source\\repos\\PokemonFrameWork.Controls\\PokemonFrameWork.Controls\\PokemonFrameWork.Controls.csproj": {
-      "version": "1.0.0",
+      "version": "1.0.0-preview1",
       "restore": {
         "projectUniqueName": "C:\\Users\\tetra\\source\\repos\\PokemonFrameWork.Controls\\PokemonFrameWork.Controls\\PokemonFrameWork.Controls.csproj",
         "projectName": "PokemonFrameWork.Controls",
@@ -42,6 +42,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "Gabriel.Cat.Blazor": {
+              "target": "Package",
+              "version": "[1.0.0-preview1, )"
+            },
             "Microsoft.AspNetCore.Components": {
               "target": "Package",
               "version": "[3.1.1, )"
@@ -75,7 +79,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files (x86)\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.101\\RuntimeIdentifierGraph.json"
         }
       }
     }

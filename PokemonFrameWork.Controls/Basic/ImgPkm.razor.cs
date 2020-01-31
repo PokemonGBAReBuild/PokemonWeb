@@ -1,6 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Text;
+using Gabriel.Cat.Extension;
+using Microsoft.AspNetCore.Components;
 
 namespace PokemonFrameWork.Controls.Basic
 {
@@ -9,11 +12,11 @@ namespace PokemonFrameWork.Controls.Basic
         [Parameter] public PokemonGBAFrameWork.PokemonCompleto Pokemon { get; set; }
         [Parameter] public bool IsFrontalPic { get; set; } = true;
         [Parameter] public int FramePic { get; set; } = 0;//el primero esta por defecto
-        [Parameter] public EventCallBack OnClick { get; set; }
+        [Parameter] public EventCallback OnClick { get; set; }
 
-        [Parameter] public EventCallBack OnDobleClick { get; set; }
-        [Parameter] public EventCallBack OnContextMenu { get; set; }
-        [Parameter] public EventCallBack OnMouseOver { get; set; }
+        [Parameter] public EventCallback OnDobleClick { get; set; }
+        [Parameter] public EventCallback OnContextMenu { get; set; }
+        [Parameter] public EventCallback OnMouseOver { get; set; }
         public string ImgActual
         {
             get
@@ -33,14 +36,15 @@ namespace PokemonFrameWork.Controls.Basic
                         img = Pokemon.Sprites.SpritesTraseros.Sprites[FramePic];
                     }
                     //creo una URL para el Bitmap
-
+                    url = ((Bitmap)img).GetUrl().Result;
                 }
 
                 return url;
             }
         }
-        protected override void OnParameterSet()
+        protected override void OnParametersSet()
         {
+            base.OnParametersSet();
             if (Pokemon != null)
             {
                 if (IsFrontalPic && FramePic >= Pokemon.Sprites.SpritesFrontales.Sprites.Count)

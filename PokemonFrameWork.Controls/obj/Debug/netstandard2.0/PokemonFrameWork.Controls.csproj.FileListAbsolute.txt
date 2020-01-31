@@ -2,3 +2,11 @@ C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\
 C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\staticwebassets\PokemonFrameWork.Controls.StaticWebAssets.xml
 C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\PokemonFrameWork.Controls.RazorComponent.input.cache
 C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\PokemonFrameWork.Controls.csprojAssemblyReference.cache
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\bin\Debug\netstandard2.0\PokemonFrameWork.Controls.deps.json
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\bin\Debug\netstandard2.0\PokemonFrameWork.Controls.dll
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\RazorDeclaration\Basic\ImgPkm.razor.g.cs
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\RazorDeclaration\Complex\PkmList.razor.g.cs
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\RazorDeclaration\_Imports.razor.g.cs
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\PokemonFrameWork.Controls.AssemblyInfoInputs.cache
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\PokemonFrameWork.Controls.AssemblyInfo.cs
+C:\Users\tetra\source\repos\PokemonFrameWork.Controls\PokemonFrameWork.Controls\obj\Debug\netstandard2.0\PokemonFrameWork.Controls.RazorTargetAssemblyInfo.cache

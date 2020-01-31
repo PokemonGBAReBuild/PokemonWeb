@@ -3,14 +3,34 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RazorLangVersion>3.0</RazorLangVersion>
+    <Version>1.0.0-preview1</Version>
+    <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <RepositoryType>GIT</RepositoryType>
+    <RepositoryUrl>https://github.com/PokemonGBAReBuild/PokemonWeb</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/PokemonGBAReBuild/PokemonWeb</PackageProjectUrl>
+    <Company>PokemonGBAFrameWork</Company>
+    <Authors>PokemonGBAFrameWork</Authors>
+    <Product>PokemonGBAFrameWork</Product>
+    <Copyright>PokemonGBAFrameWork</Copyright>
   </PropertyGroup>
 
 
   <ItemGroup>
+    <PackageReference Include="Gabriel.Cat.Blazor" Version="1.0.0-preview1" />
     <PackageReference Include="Microsoft.AspNetCore.Components" Version="3.1.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="3.1.1" />
     <PackageReference Include="PokemonGBAFrameWork" Version="1.0.1-preview5" />
     <PackageReference Include="System.Drawing.Common" Version="4.7.0" />
+  </ItemGroup>
+
+
+  <ItemGroup>
+    <None Include="..\..\..\..\Documents\LICENSE.txt">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
