@@ -1,0 +1,8 @@
+﻿@inherits PkmListBase
+
+<ul> 
+@foreach (PokemonCompleto pokemon in GetPokemon()) 
+{
+    <PokemonFrameWork.Controls.Basic.ImgPkm Pokemon="pokemon" OnClick="OnClick" OnContextMenu="OnContextMenu" OnDobleClick="OnDobleClick" OnMouseOver="OnMouseOver"/>
+}
+</ul>
